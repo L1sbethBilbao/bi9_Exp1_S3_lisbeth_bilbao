@@ -1,5 +1,6 @@
 ﻿import PageHeader from '../components/PageHeader.jsx'
 import tiendas from '../data/tiendas.js'
+import { assetUrl } from '../util/assetUrl.js'
 
 function NuestrasTiendas() {
   return (
@@ -14,7 +15,7 @@ function NuestrasTiendas() {
         </div>
         <div>
           <img
-            src="/img/hero-supermercado.jpg"
+            src={assetUrl('img/hero-supermercado.jpg')}
             className="w-full rounded-xl shadow-sm"
             alt="Interior de una tienda Casa Gourmet"
           />

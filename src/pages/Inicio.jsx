@@ -1,24 +1,25 @@
 ﻿import { Link } from 'react-router'
 import useInventario from '../hooks/useInventario.js'
 import EnlaceBoton from '../components/EnlaceBoton.jsx'
+import { assetUrl } from '../util/assetUrl.js'
 
 const destacados = [
   {
-    imagen: '/img/frutas-verduras.jpg',
+    imagen: assetUrl('img/frutas-verduras.jpg'),
     alt: 'Frutas y verduras frescas en el mercado',
     titulo: 'Frescos del día',
     texto:
       'Frutas, verduras y panadería seleccionadas cada mañana para llegar a tu mesa con la mejor calidad.',
   },
   {
-    imagen: '/img/abarrotes.jpg',
+    imagen: assetUrl('img/abarrotes.jpg'),
     alt: 'Estanterías de abarrotes en el supermercado',
     titulo: 'Abarrotes y despensa',
     texto:
       'Todo lo esencial para el hogar, con precios claros y stock organizado para una compra rápida.',
   },
   {
-    imagen: '/img/atencion.jpg',
+    imagen: assetUrl('img/atencion.jpg'),
     alt: 'Atención al cliente en caja',
     titulo: 'Atención cercana',
     texto:
@@ -62,7 +63,7 @@ function Inicio() {
           </div>
           <div>
             <img
-              src="/img/hero-supermercado.jpg"
+              src={assetUrl('img/hero-supermercado.jpg')}
               className="w-full rounded-xl shadow-sm"
               alt="Interior premium de Casa Gourmet"
             />

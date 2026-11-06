@@ -1,4 +1,5 @@
 ﻿import PageHeader from '../components/PageHeader.jsx'
+import { assetUrl } from '../util/assetUrl.js'
 
 const pilares = [
   {
@@ -36,7 +37,7 @@ function QuienesSomos() {
         </div>
         <div>
           <img
-            src="/img/equipo-local.jpg"
+            src={assetUrl('img/equipo-local.jpg')}
             className="w-full rounded-xl shadow-sm"
             alt="Interior premium de Casa Gourmet con pasillo gourmet"
           />

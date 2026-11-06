@@ -1,5 +1,6 @@
 ﻿import { Link, NavLink } from 'react-router'
 import useInventario from '../hooks/useInventario.js'
+import { assetUrl } from '../util/assetUrl.js'
 
 const enlaces = [
   { to: '/', label: 'Inicio', end: true },
@@ -31,7 +32,7 @@ function Navigation() {
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-4 py-3">
         <Link to="/" className="flex w-fit items-center gap-3 no-underline">
           <img
-            src="/img/logo-casa-gourmet.jpg"
+            src={assetUrl('img/logo-casa-gourmet.jpg')}
             alt="Logo Casa Gourmet"
             className="h-12 w-12 shrink-0 rounded-xl object-cover shadow-sm"
           />
